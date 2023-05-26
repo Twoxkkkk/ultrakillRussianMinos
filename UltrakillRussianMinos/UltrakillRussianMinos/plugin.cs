@@ -12,7 +12,7 @@ namespace UltrakillRussianMinos
     public class Plugin : BaseUnityPlugin
     {
         public static AssetBundle assets = AssetBundle.LoadFromMemory(Resource1.minosvl);
-        //Yo. The russian letters aren't supported by ultrakill subtitlea font
+        //Yo. The russian letters aren't supported by ultrakill subtitles font
         private static SubtitledAudioSource.SubtitleDataLine MakeLine(string subtitle, float time)
         {
             return new SubtitledAudioSource.SubtitleDataLine
