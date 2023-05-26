@@ -12,7 +12,7 @@ namespace UltrakillRussianMinos
     public class Plugin : BaseUnityPlugin
     {
         public static AssetBundle assets = AssetBundle.LoadFromMemory(Resource1.minosvl);
-        public static AudioClip minosIntro = assets.LoadAsset<AudioClip>("minosIntro.mp3");
+
         private static SubtitledAudioSource.SubtitleDataLine MakeLine(string subtitle, float time)
         {
             return new SubtitledAudioSource.SubtitleDataLine
@@ -73,9 +73,9 @@ namespace UltrakillRussianMinos
             }
         }
         [HarmonyPatch(typeof(StockMapInfo), "Awake")]
-        class Patch03
+        class Patch2
         {
-            // Token: 0x0600000B RID: 11 RVA: 0x0000234C File Offset: 0x0000054C
+
             private static void Postfix(StockMapInfo __instance)
             {
                 foreach (AudioSource audioSource in Resources.FindObjectsOfTypeAll<AudioSource>())
