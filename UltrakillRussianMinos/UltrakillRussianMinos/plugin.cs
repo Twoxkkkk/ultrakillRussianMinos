@@ -25,7 +25,7 @@ namespace UltrakillRussianMinos
         {
             Harmony harmony = new Harmony("com.gooeyessential.rus");
             harmony.PatchAll();
-            Debug.Log(minosIntro);
+
 
         }
 
